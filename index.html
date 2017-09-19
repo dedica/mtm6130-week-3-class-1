@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /*
+        CSS Colors:
+        */
+        h1 {
+            /*Setting the color with the word-value*/
+            background-color: pink; 
+            
+            /*Setting the color with hexadecimal notation*/
+            background-color: #FF00FF;
+            background-color: #F0F;
+            
+            /*Setting color with rgb()*/
+            background-color: rgba(100, 150, 95, 0.5);
+            
+            /*Setting color with hsl()*/
+            background-color: hsla(120, 100%, 50%, 0.1);
+        }
+        
+        /*
+        Box-Model
+        */   
+        * {
+            box-sizing: border-box;
+        }
+        
+        p {
+            width: 100%;
+            border: 10px solid #F0F;
+            padding: 20px;
+        }
+        
+        
+        
+        /*
+        Background Image
+        */
+        body {
+            color: white;
+            background-image: url(./img/wood.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        
+        
+        /*
+        HANDLING MEDIA QUERIES
+        */
+        ul li {
+            border: 1px solid #CCC;
+        } 
+        
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        ul li a:hover {
+            color: red;
+        }
+        
+        
+        @media all and (min-width: 600px) {
+            /*
+            CSS rules inside are applicable only 
+            for screenwidth of 600px and larger than that
+            */
+            
+            ul li {
+                display: inline-block ;
+            } 
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <!-- ul>li*3>a -->
+   
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, sunt, earum! Optio asperiores eaque modi adipisci perspiciatis, quod suscipit! Quos placeat minus voluptas, ipsa temporibus quae magni porro consequatur suscipit eaque earum autem eligendi reprehenderit ab alias, nihil explicabo esse, sit veniam fuga. Accusantium maxime eum reprehenderit vero nesciunt repellendus, ipsam tempora perspiciatis blanditiis.asperiores!</p>
+</body>
+</html>
